@@ -1,24 +1,30 @@
-# README
+# Installing Bootstrap on Rails 6 with Webpacker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the code for a simple tutorial that shows how to install Bootstrap on Rails 6 with Webpacker.
 
-Things you may want to cover:
+## Important files
 
-* Ruby version
+* package.json
+* config/webpack/environment.js
+* app/javascript/packs/application.js
+* app/javascript/packs/stylesheets/application.scss
+* config/routes.rb
+* app/views/layouts/application.html.erb
+* app/views/hello/world.html.erb
 
-* System dependencies
+## Setup
 
-* Configuration
+Clone the repository and change to the project directory.
 
-* Database creation
+    git@github.com:danielsellergren/tutorial-bootstrap-rails-6.git
+    cd tutorial-bootstrap-rails-6/
 
-* Database initialization
+Install all Ruby and JavaScript dependencies.
 
-* How to run the test suite
+    bundle install
+    yarn install
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the server and open https://localhost:3000 in your browser.
 
-* Deployment instructions
-
-* ...
+    rails server
+    open https://localhost:3000
